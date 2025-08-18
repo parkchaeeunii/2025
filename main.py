@@ -42,3 +42,41 @@ st.markdown(
     </h1>
     <h3 style='text-align:center; color:#FF69B4;'>
       9월 13일, 전세계 스타들과 함께 파티타임! ✨
+      </h3>
+    """,
+    unsafe_allow_html=True
+)
+
+# 🎈 애니메이션
+st.balloons()
+
+# 🎊 랜덤 파티 멘트
+party_messages = [
+    "🎊 케이크 불 끄고 소원 빌기! 🎂",
+    "🎁 선물 대방출 DAY 💝",
+    "🥂 모두 모여 건배~ ✨",
+    "🎶 춤추자! 파티타임! 🎧",
+    "🌈 반짝반짝 오늘의 주인공은 바로 너!"
+]
+st.markdown(
+    f"<p style='text-align:center; font-size:20px; color:#FF4500;'>{random.choice(party_messages)}</p>",
+    unsafe_allow_html=True
+)
+
+# 🌟 카테고리 선택
+category = st.selectbox("💖 어떤 카테고리의 스타들과 생일을 공유할까요?", list(celebrities.keys()))
+
+# 🎇 결과
+if category:
+    st.subheader(f"🎉 {category} 라인업 🎉")
+    for celeb in celebrities[category]:
+        st.image(celeb["image"], caption=celeb["name"], width=200)
+        st.markdown(f"<p style='font-size:22px; color:#FF69B4;'>✨ {celeb['name']}</p>", unsafe_allow_html=True)
+
+# 🎆 푸터
+st.markdown(
+    "<hr><p style='text-align:center; color:#FF1493; font-size:18px;'>"
+    "🎂 세상에서 제일 특별한 9월 13일! 오늘도 반짝이는 너의 날 ✨"
+    "</p>",
+    unsafe_allow_html=True
+)
