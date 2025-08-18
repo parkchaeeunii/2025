@@ -5,8 +5,7 @@ import random
 celebrities = {
     "아이돌": [
         "Yeonjun (TXT) 🎤",
-        "Sungchan (RIIZE) 🌟"
-    ],
+        "Sungchan (RIIZE) 🌟"  ],
     "해외 스타": [
         "Playboi Carti (래퍼) 🎵",
         "Niall Horan (가수, One Direction) 🎸",
