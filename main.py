@@ -76,4 +76,6 @@ if category:
 
 # 🎊 푸터
 st.markdown(
-    "<hr><p style='text-
+    "<hr><p style='text-align:center; color:#FF1493; font-size:20px;'>🎂 세상에서 제일 특별한 9월 13일! 전세계 스타들과 함께 축하해요 🎉</p>",
+    unsafe_allow_html=True,
+)
