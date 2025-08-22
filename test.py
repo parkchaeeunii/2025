@@ -1,6 +1,9 @@
 import streamlit as st
 import random
 
+ 이미지 폴더 경로
+IMG_DIR = Path("images")
+
 # 별자리 데이터 (이름: 이미지 파일명)
 constellations = {
     "양자리": "aries.jpg",
