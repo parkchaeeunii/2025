@@ -1,7 +1,7 @@
 # sentiment_app.py
 
 import streamlit as st
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import 
 from sklearn.naive_bayes import MultinomialNB
 
 # 1. 간단한 학습 데이터 준비
